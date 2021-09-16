@@ -65,12 +65,13 @@
           </div>
 
           <div class="col-6">
-            <form action="">
-              <input placeholder="Full Name" class="form-control">
-              <input style="margin-top:20px" placeholder="Email" class="form-control">
+            <form action="https://formsubmit.co/carlatresejeanpierre@gmail.com" method="POST"> 
+              <input type="text" name="name" placeholder="Your Full Name" class="form-control" required>
+              <input type="email" name="email" style="margin-top:20px" placeholder="Your Email" class="form-control" required>
               <label style="margin-top: 20px;">Message</label>
-              <textarea class="form-control"></textarea>
-              <button style="margin-top: 20px;" class="btn btn-primary">Send Message</button>
+              <textarea class="form-control" required></textarea>
+              <button type="submit" style="margin-top: 20px;" class="btn btn-primary">Send Message</button>
+              <input type="hidden" name="_next" value="./thankyou.html">
             </form>                        
           </div>
         </div>      
